@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condor Xtreme - Contacto</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos-contacto.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Condor Xtreme Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">DESTINOS</a></li>
+                <li><a href="#">CONTACTOS</a></li> <!--COLOQUE AQUI LOS OTROS HTML-->
+                <li><a href="#">VIDEOS</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h3>Información de Contacto</h3>
+            <table>
+                <tr><td><strong>Dirección:</strong></td><td>Av. Globo Terráqueo 7131, Lima, Peru | Jr. Neptuno 123 Urbanizacion Sol de Oro de Los Olivos</td></tr>
+                <tr><td><strong>Teléfono:</strong></td><td>+51 997 577 479 | 989 948 484 | 5335242</td></tr>
+                <tr><td><strong>Email:</strong></td><td>ventas@transportecarmelo.com</td></tr>
+                <tr><td><strong>Horario:</strong></td><td>Lunes a Viernes de 8am a 6pm</td></tr>
+            </table>
+        </section>
+
+        <!-- Formulario con Script al final del codigo -->
+        <section>
+            <h3>Escríbenos</h3>
+            <form onsubmit="return validarFormulario()">
+                <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+                <input type="tel" name="celular" placeholder="Celular" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="text" name="ruc" placeholder="RUC (Opcional)">
+                <textarea name="mensaje" placeholder="Detalle su requerimiento..." required></textarea>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </section>
+
+        <!-- Google Maps con Iframe -->
+        <section>
+            <h3>Ubícanos</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.8398479400455!2d-77.05789488463857!3d-12.091642291427147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDA1JzMwLjAiUyA3N8KwMDMnMzIuMCJX!5e0!3m2!1ses!2spe!4v1660000000000!5m2!1ses!2spe" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>Explanada Costa Verde del Distrito de Magdalena del Mar<br>
+            +51 947392102<br>
+            contacto@condorxtreme.com</p>
+        <p>&copy; Condor Xtreme 2025 Todos los derechos reservados</p>
+    </footer>
+<!--Script del Formulario-->
+    <script>
+        function validarFormulario() {
+            return true;
+        }
+    </script>
+</body>
+
+</html>
